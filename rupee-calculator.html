@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rupee Change Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="wrapper">
+
+  <header>
+    <div class="logo">
+      <span class="logo-icon">₹</span>
+      <span class="logo-text">Change Counter</span>
+    </div>
+    <h1>Rupee Note &amp;<br/>Coin Breakdown</h1>
+    <p class="tagline">Enter any amount and instantly see the exact combination of notes &amp; coins needed to pay it.</p>
+  </header>
+
+  <div class="how-card">
+    <span class="how-icon">💡</span>
+    <p class="how-text">
+      Type an amount in rupees below and hit <strong>Calculate</strong>. The app uses the <strong>greedy algorithm</strong> — it picks the largest denomination first, then works its way down to give you the <strong>fewest possible notes &amp; coins</strong>.
+    </p>
+  </div>
+
+  <div class="input-card">
+    <label class="input-label" for="amountInput">Enter Amount (₹)</label>
+    <div class="input-row">
+      <div class="rupee-wrap">
+        <span class="rupee-symbol">₹</span>
+        <input type="number" id="amountInput" placeholder="e.g. 1375" min="1" step="1" autocomplete="off" inputmode="numeric"/>
+      </div>
+      <button class="calc-btn" onclick="calculate()">Calculate →</button>
+    </div>
+    <p class="error-msg" id="errorMsg">⚠ Please enter a valid positive whole number.</p>
+  </div>
+
+  <div class="results-section" id="resultsSection">
+    <div class="results-header">
+      <span class="results-title">Breakdown</span>
+      <span class="total-badge" id="totalBadge">₹0</span>
+    </div>
+    <div class="denomination-grid" id="denomGrid"></div>
+    <div class="no-result" id="noResult">No notes or coins required for this amount.</div>
+    <button class="reset-btn" onclick="reset()">↺ &nbsp;Reset</button>
+  </div>
+
+  <footer>Works entirely in your browser — no data sent anywhere.</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
