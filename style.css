@@ -132,6 +132,7 @@ input[type="number"] {
   padding: 14px 16px 14px 44px;
   outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
+  appearance: textfield;
   -moz-appearance: textfield;
 }
 input[type="number"]::-webkit-inner-spin-button,
