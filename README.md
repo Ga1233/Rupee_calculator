@@ -8,7 +8,7 @@ A lightweight, browser-based tool that breaks down any rupee amount into the **f
 
 ```
 rupee-calculator/
-├── rupee-calculator.html   # Markup and page structure
+├── index.html   # Markup and page structure
 ├── style.css               # All styles and CSS variables
 ├── script.js               # Calculator logic and DOM interactions
 └── README.md               # You are here
@@ -19,7 +19,7 @@ rupee-calculator/
 ## 🚀 Getting Started
 
 1. Download or clone all three files into the **same folder**.
-2. Open `rupee-calculator.html` in any modern browser.
+2. Open `index.html` in any modern browser.
 3. That's it — no installation, no dependencies, no internet required (except for loading Google Fonts).
 
 ---
